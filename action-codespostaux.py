@@ -50,7 +50,7 @@ class ActionCodesPostaux(snips_common.ActionWrapper):
 
         if len(postcodes) > 1:
             self.end_session(
-                "Il y a quatre codes postaux pour la ville de", found_city, *postcodes
+                "Il y a", str(len(postcodes)), "codes postaux pour la ville de", found_city, *postcodes
             )
         else:
             self.end_session("Le code postal de", found_city, "est", postcodes[0])
