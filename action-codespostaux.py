@@ -60,4 +60,4 @@ if __name__ == "__main__":
     mqtt_opts = MqttOptions()
 
     with Hermes(mqtt_options=mqtt_opts) as h:
-        h.subscribe_intent("roozeec:codepostal", ActionCodesPostaux.callback).start()
+        h.subscribe_intent("borsltd:codepostal", ActionCodesPostaux.callback).start()
